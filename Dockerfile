@@ -6,6 +6,6 @@ python36-devel \
 python36-setuptools \
 easy_install-3.6 pip
 
-RUN virtualenv venv3 --python=python3
+RUN virtualenv -p /usr/bin/python3.6 /venv3
 
-#RUN source venv3/bin/activate
+CMD [ "/bin/sh" ]
